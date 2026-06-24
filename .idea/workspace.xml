@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ee04145-c2f5-4643-906a-a2769d5ea531" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/class.building.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/class.building.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/class.citizen.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/class.citizen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/class.nobleBuilding.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/class.nobleBuilding.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/class.nobleCitizen.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/class.nobleCitizen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/class.village.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/class.village.js" afterDir="false" />
-    </list>
+    <list default="true" id="5ee04145-c2f5-4643-906a-a2769d5ea531" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1780306103330</updated>
       <workItem from="1780306105595" duration="9784000" />
-      <workItem from="1781510583249" duration="4037000" />
+      <workItem from="1781510583249" duration="4931000" />
     </task>
     <servers />
   </component>
