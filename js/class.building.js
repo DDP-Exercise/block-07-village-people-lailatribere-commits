@@ -17,3 +17,57 @@
  *        resident remaining in the building.
  * - listAllResidents() for the Citizen Directory.
  */
+
+export default class Building{
+    constructor(name, capacity){
+        this.name = name;
+        this.capacity = capacity;
+        this.residents = []; // array of citizens living in this building
+    }
+
+    addResident(citizen){
+        if(this.residents.length < this.capacity){
+            this.residents.push(citizen);
+            citizen.home = this.name;
+            return true;
+        }else {
+            return (this.makeSpaceFor(citizen));
+        }
+    }
+
+    removeResident(citizen){
+        //TODO: if nobles!
+        this.residents.splice(this.residents.indexOf(citizen), 1);
+        citizen.home = null;
+    }
+
+    findLowestResident(){
+        if(this.residents.length) {
+            let lowestResident = this.residents[0]
+            for (const resident of this.residents) {
+                if (resident.rank > lowestResident.rank)
+                    lowestResident = resident;
+            }
+            return lowestResident;
+        }
+    }
+
+    makeSpaceFor(citizen){
+        let lowest = this.findLowestResident();
+        if (citizen.rank <lowest.rank){
+            this.removeResident(lowest);
+            this.addResident(citizen);
+        }
+    }
+
+    listAllResidents(){
+        // similar to (String(citizen)) from class.village.js
+        console.log("%c Residents of "+ this.name + "(" + this.residents.length + "/" + this.capacity + "):", "background-color: yellow; color: black");
+        for(const resident of this.residents){
+            console.log(String(resident));
+        }
+    }
+
+}
+//TODO: all imports
+//TODO: finish the codes without changing anything
